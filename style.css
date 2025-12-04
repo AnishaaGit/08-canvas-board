@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(244, 244, 244);
+    font-family: "Figtree", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.toolbar {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.drawTools {
+    display: flex;
+    padding: 7px;
+    gap: 10px;
+}
+
+.button {
+    background-color: #e5e7eb;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e5e7eb;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #d5d7da;
+}
+
+.active {
+    border: 2px solid rgb(109, 109, 229);
+    background-color: #d5d7da;
+}
+
+.colorInput,
+.brushSize,
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: large;
+    font-weight: 500;
+    color: rgb(96, 110, 124);
+    flex-shrink: 0;
+}
+
+input {
+    cursor: pointer;
+}
+
+input[type="range"] {
+    max-width: 120px;
+    width: 100%;
+}
+
+.clear {
+    background-color: red;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.clear:hover {
+    background-color: rgb(220, 5, 5);
+}
+
+.download {
+    background-color: rgb(21, 202, 21);
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.download:hover {
+    background-color: rgb(9, 172, 9);
+}
+
+#canvas {
+  margin-top: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+}
