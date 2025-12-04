@@ -9,8 +9,8 @@ const downloadBtn = document.getElementById("download");
 
 const canvas = document.getElementById("canvas");
 
-canvas.height = 650;
-canvas.width = 1200;
+canvas.height = canvas.offsetHeight;
+canvas.width = canvas.offsetWidth;
 
 // creating object of canvas
 const ctx = canvas.getContext("2d");
